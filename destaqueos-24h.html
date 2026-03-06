@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Destaqueos 24 Horas - Servicio profesional de plomería, destaqueos, limpieza de tanques sépticos y más. Disponibles 24/7">
+    <meta name="theme-color" content="#1e3a8a">
+    <title>Destaqueos 24 Horas | Multiservicios Espinoza</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+:root {
+    /* Colors */
+    --primary-blue: #1e3a8a;
+    --primary-blue-light: #2563eb;
+    --primary-blue-dark: #1e2f5a;
+    --accent-red: #dc2626;
+    --accent-red-dark: #b91c1c;
+    --accent-yellow: #fbbf24;
+    --accent-orange: #f97316;
+    
+    --bg-dark: #0f172a;
+    --bg-medium: #1e293b;
+    --bg-light: #f1f5f9;
+    --text-dark: #0f172a;
+    --text-medium: #64748b;
+    --text-light: #94a3b8;
+    --white: #ffffff;
+    
+    /* Typography */
+    --font-display: 'Bebas Neue', sans-serif;
+    --font-body: 'Barlow', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 3rem;
+    --spacing-2xl: 4rem;
+    
+    /* Border Radius */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    --shadow-glow: 0 0 20px rgba(251, 191, 36, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--text-dark);
+    background: var(--bg-light);
+    overflow-x: hidden;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue) 100%);
+    color: var(--white);
+    padding: var(--spacing-md) var(--spacing-sm);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow-xl);
+    border-bottom: 3px solid var(--accent-yellow);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.logo-circle {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-orange) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: var(--shadow-glow);
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.brand-name {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+.highlight {
+    color: var(--accent-yellow);
+}
+
+.brand-tagline {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.main-nav {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-xs);
+}
+
+.nav-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    color: var(--white);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.nav-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.nav-btn.active {
+    background: var(--white);
+    color: var(--primary-blue);
+    border-color: var(--accent-yellow);
+}
+
+.nav-btn svg {
+    width: 20px;
+    height: 20px;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-md);
+    min-height: calc(100vh - 200px);
+}
+
+.section {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.section.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-orange) 100%);
+    color: var(--white);
+    padding: var(--spacing-xs) var(--spacing-md);
+    border-radius: var(--radius-xl);
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: var(--shadow-glow);
+    margin-bottom: var(--spacing-lg);
+    animation: slideDown 0.6s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-badge svg {
+    animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+}
+
+.hero-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-blue-dark);
+    letter-spacing: 1px;
+    animation: slideUp 0.8s ease-out 0.2s both;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-highlight {
+    display: block;
+    background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-orange) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    color: var(--text-medium);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+    animation: slideUp 0.8s ease-out 0.4s both;
+}
+
+.quick-actions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    max-width: 400px;
+    margin: 0 auto var(--spacing-2xl);
+    animation: slideUp 0.8s ease-out 0.6s both;
+}
+
+.cta-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.cta-btn:hover::before {
+    left: 100%;
+}
+
+.cta-primary {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: var(--white);
+    box-shadow: var(--shadow-lg);
+}
+
+.cta-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-xl);
+}
+
+.cta-secondary {
+    background: var(--white);
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+}
+
+.cta-secondary:hover {
+    background: var(--primary-blue);
+    color: var(--white);
+    transform: translateY(-3px);
+}
+
+.cta-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+.trust-indicators {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-2xl);
+    animation: slideUp 0.8s ease-out 0.8s both;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.trust-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.trust-icon {
+    font-size: 2rem;
+}
+
+.trust-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.trust-text strong {
+    font-weight: 700;
+    color: var(--primary-blue-dark);
+}
+
+.trust-text span {
+    font-size: 0.9rem;
+    color: var(--text-medium);
+}
+
+/* Section Header */
+.section-header {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    color: var(--primary-blue-dark);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 1px;
+}
+
+.section-subtitle {
+    font-size: 1.1rem;
+    color: var(--text-medium);
+}
+
+/* Services Grid */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.service-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-red), var(--accent-orange), var(--accent-yellow));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--accent-yellow);
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.service-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--primary-blue-dark);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: 0.5px;
+}
+
+.service-description {
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.6;
+}
+
+.service-btn {
+    width: 100%;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.service-btn:hover {
+    background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-orange) 100%);
+    transform: scale(1.05);
+}
+
+/* Quote Form */
+.quote-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.quote-form {
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    border: 2px solid var(--accent-yellow);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-weight: 600;
+    color: var(--primary-blue-dark);
+    margin-bottom: var(--spacing-sm);
+    font-size: 0.95rem;
+}
+
+.form-label svg {
+    width: 20px;
+    height: 20px;
+    color: var(--accent-orange);
+}
+
+.form-input {
+    width: 100%;
+    padding: var(--spacing-md);
+    border: 2px solid #e2e8f0;
+    border-radius: var(--radius-md);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: var(--bg-light);
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--accent-yellow);
+    background: var(--white);
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
+}
+
+select.form-input {
+    cursor: pointer;
+}
+
+textarea.form-input {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.radio-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: var(--bg-light);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.radio-label:hover {
+    background: #e2e8f0;
+}
+
+.radio-label input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: var(--accent-orange);
+}
+
+.septic-details {
+    background: #fef3c7;
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    border: 2px solid var(--accent-yellow);
+    margin-bottom: var(--spacing-lg);
+}
+
+.alert-info {
+    display: flex;
+    align-items: start;
+    gap: var(--spacing-md);
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+    color: var(--white);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-md);
+}
+
+.alert-info svg {
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.submit-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md) var(--spacing-lg);
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-lg);
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-lg);
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-xl);
+}
+
+.submit-btn svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Contact Section */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.contact-card {
+    background: var(--white);
+    padding: var(--spacing-xl);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--accent-yellow);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.contact-title {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    color: var(--primary-blue-dark);
+    margin-bottom: var(--spacing-md);
+    letter-spacing: 0.5px;
+}
+
+.contact-link {
+    display: block;
+    color: var(--accent-orange);
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: var(--accent-red);
+    transform: scale(1.05);
+}
+
+.contact-text {
+    color: var(--text-medium);
+    line-height: 1.8;
+}
+
+.social-proof {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-lg);
+    padding: var(--spacing-xl);
+    background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue) 100%);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+}
+
+.proof-item {
+    text-align: center;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.proof-item strong {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    color: var(--accent-yellow);
+    letter-spacing: 1px;
+}
+
+.proof-item span {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Footer */
+.footer {
+    background: var(--bg-dark);
+    color: var(--white);
+    padding: var(--spacing-xl) var(--spacing-md);
+    margin-top: var(--spacing-2xl);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-text {
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+}
+
+.footer-subtext {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+/* Install Prompt */
+.install-prompt {
+    position: fixed;
+    bottom: var(--spacing-md);
+    left: var(--spacing-md);
+    right: var(--spacing-md);
+    background: var(--white);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-xl);
+    border: 2px solid var(--accent-yellow);
+    z-index: 1000;
+    animation: slideUpPrompt 0.5s ease-out;
+}
+
+@keyframes slideUpPrompt {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.install-content {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.install-content svg {
+    color: var(--accent-orange);
+    flex-shrink: 0;
+}
+
+.install-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.install-text strong {
+    font-weight: 700;
+    color: var(--primary-blue-dark);
+}
+
+.install-text span {
+    font-size: 0.9rem;
+    color: var(--text-medium);
+}
+
+.install-btn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: linear-gradient(135deg, var(--accent-red) 0%, var(--accent-orange) 100%);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius-md);
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.install-btn:hover {
+    transform: scale(1.05);
+}
+
+.dismiss-btn {
+    padding: var(--spacing-sm);
+    background: transparent;
+    color: var(--text-medium);
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+
+.dismiss-btn:hover {
+    color: var(--accent-red);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .header {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+    
+    .logo-section {
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .logo-circle {
+        width: 80px;
+        height: 80px;
+        font-size: 1.5rem;
+    }
+    
+    .brand-name {
+        font-size: 2.5rem;
+    }
+    
+    .main-nav {
+        gap: var(--spacing-md);
+    }
+    
+    .nav-btn {
+        flex-direction: row;
+        justify-content: center;
+        font-size: 0.95rem;
+        padding: var(--spacing-md);
+    }
+    
+    .quick-actions {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-content {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+    
+    .install-prompt {
+        max-width: 500px;
+        left: auto;
+        right: var(--spacing-lg);
+        bottom: var(--spacing-lg);
+    }
+}
+
+/* Loading State */
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+.loading {
+    animation: shimmer 2s infinite;
+    background: linear-gradient(to right, #f6f7f8 0%, #edeef1 20%, #f6f7f8 40%, #f6f7f8 100%);
+    background-size: 1000px 100%;
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-circle">
+                    <span class="logo-text">D24H</span>
+                </div>
+                <div class="brand-info">
+                    <h1 class="brand-name">DESTAQUEOS<span class="highlight"> 24 HORAS</span></h1>
+                    <p class="brand-tagline">Multiservicios Espinoza</p>
+                </div>
+            </div>
+            <nav class="main-nav">
+                <button class="nav-btn active" data-section="home">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                    </svg>
+                    <span>Inicio</span>
+                </button>
+                <button class="nav-btn" data-section="services">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                    </svg>
+                    <span>Servicios</span>
+                </button>
+                <button class="nav-btn" data-section="quote">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                        <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                    </svg>
+                    <span>Cotizar</span>
+                </button>
+                <button class="nav-btn" data-section="contact">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                    </svg>
+                    <span>Contacto</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <div class="hero-badge">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <circle cx="12" cy="12" r="8"/>
+                    </svg>
+                    <span>Disponible 24/7</span>
+                </div>
+                <h2 class="hero-title">Servicio de Emergencia<br><span class="hero-highlight">Siempre a tu Alcance</span></h2>
+                <p class="hero-description">Profesionales certificados listos para resolver tus problemas de plomería, destaqueos y más. Respuesta inmediata, trabajo garantizado.</p>
+                
+                <div class="quick-actions">
+                    <a href="https://wa.me/50686504644?text=Hola,%20necesito%20un%20servicio%20de%20emergencia" class="cta-btn cta-primary" target="_blank" rel="noopener">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Llamar Ahora
+                    </a>
+                    <button class="cta-btn cta-secondary" data-action="quote">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                        </svg>
+                        Solicitar Cotización
+                    </button>
+                </div>
+
+                <div class="trust-indicators">
+                    <div class="trust-item">
+                        <div class="trust-icon">⚡</div>
+                        <div class="trust-text">
+                            <strong>Respuesta Rápida</strong>
+                            <span>Menos de 30 min</span>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">🛠️</div>
+                        <div class="trust-text">
+                            <strong>Equipos Modernos</strong>
+                            <span>Tecnología avanzada</span>
+                        </div>
+                    </div>
+                    <div class="trust-item">
+                        <div class="trust-icon">✓</div>
+                        <div class="trust-text">
+                            <strong>Garantía</strong>
+                            <span>Trabajo asegurado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Servicios</h2>
+                <p class="section-subtitle">Soluciones profesionales para cada necesidad</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-service="destaque">
+                    <div class="service-icon">🚰</div>
+                    <h3 class="service-title">Destaque de Tuberías</h3>
+                    <p class="service-description">Limpieza y desobstrucción de tuberías, pilas fluviales y sistemas de drenaje.</p>
+                    <button class="service-btn" data-quote="destaque">Solicitar</button>
+                </div>
+
+                <div class="service-card" data-service="localizacion">
+                    <div class="service-icon">📍</div>
+                    <h3 class="service-title">Localización de Tuberías</h3>
+                    <p class="service-description">Detección precisa de tuberías y diagnóstico de daños con tecnología avanzada.</p>
+                    <button class="service-btn" data-quote="localizacion">Solicitar</button>
+                </div>
+
+                <div class="service-card" data-service="fontaneria">
+                    <div class="service-icon">🔧</div>
+                    <h3 class="service-title">Fontanería General</h3>
+                    <p class="service-description">Instalación, reparación y mantenimiento de sistemas de fontanería, cloacas y desagües.</p>
+                    <button class="service-btn" data-quote="fontaneria">Solicitar</button>
+                </div>
+
+                <div class="service-card" data-service="tanque-septico">
+                    <div class="service-icon">🚛</div>
+                    <h3 class="service-title">Limpieza de Tanques Sépticos</h3>
+                    <p class="service-description">Extracción y limpieza profesional de tanques sépticos con equipo especializado.</p>
+                    <button class="service-btn" data-quote="tanque-septico">Solicitar</button>
+                </div>
+
+                <div class="service-card" data-service="hidrolavadora">
+                    <div class="service-icon">💦</div>
+                    <h3 class="service-title">Lavado a Presión</h3>
+                    <p class="service-description">Limpieza con hidrolavadora de alta presión para superficies y tuberías.</p>
+                    <button class="service-btn" data-quote="hidrolavadora">Solicitar</button>
+                </div>
+
+                <div class="service-card" data-service="tuboscopia">
+                    <div class="service-icon">📹</div>
+                    <h3 class="service-title">Servicio de Tuboscopia</h3>
+                    <p class="service-description">Inspección con cámara para diagnóstico preciso de problemas internos.</p>
+                    <button class="service-btn" data-quote="tuboscopia">Solicitar</button>
+                </div>
+
+                <div class="service-card" data-service="otros">
+                    <div class="service-icon">➕</div>
+                    <h3 class="service-title">Otros Servicios</h3>
+                    <p class="service-description">¿Necesitas algo específico? Contáctanos para servicios personalizados.</p>
+                    <button class="service-btn" data-quote="otros">Solicitar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section id="quote" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Solicitar Cotización</h2>
+                <p class="section-subtitle">Completa el formulario y nos contactaremos contigo de inmediato</p>
+            </div>
+
+            <div class="quote-container">
+                <form id="quoteForm" class="quote-form">
+                    <!-- Service Selection -->
+                    <div class="form-group">
+                        <label for="service" class="form-label">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                            </svg>
+                            Servicio Requerido
+                        </label>
+                        <select id="service" name="service" class="form-input" required>
+                            <option value="">Seleccione un servicio...</option>
+                            <option value="destaque">Destaque de Tuberías y Pilas Fluviales</option>
+                            <option value="localizacion">Localización de Tuberías y Daños</option>
+                            <option value="fontaneria">Fontanería, Cloacas y Desagües</option>
+                            <option value="tanque-septico">Limpieza de Tanques Sépticos</option>
+                            <option value="hidrolavadora">Lavado a Presión con Hidrolavadora</option>
+                            <option value="tuboscopia">Servicio de Tuboscopia</option>
+                            <option value="otros">Otros Servicios</option>
+                        </select>
+                    </div>
+
+                    <!-- Other Services Detail (Hidden by default) -->
+                    <div id="otherServiceDetail" class="form-group" style="display: none;">
+                        <label for="otherServiceDescription" class="form-label">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                            </svg>
+                            Detalle del Servicio
+                        </label>
+                        <textarea id="otherServiceDescription" name="otherServiceDescription" class="form-input" rows="3" placeholder="Por favor describa el servicio que necesita..."></textarea>
+                    </div>
+
+                    <!-- Septic Tank Details (Hidden by default) -->
+                    <div id="septicTankDetails" class="septic-details" style="display: none;">
+                        <div class="form-group">
+                            <label class="form-label">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                    <line x1="3" y1="9" x2="21" y2="9"/>
+                                    <line x1="9" y1="21" x2="9" y2="9"/>
+                                </svg>
+                                Especificaciones del Tanque
+                            </label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="tankSpecType" value="alcantarillas">
+                                    <span>Número de Alcantarillas</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="tankSpecType" value="medidas">
+                                    <span>Medidas del Tanque</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="tankSpecType" value="capacidad">
+                                    <span>Capacidad Total</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div id="tankAlcantarillas" class="form-group" style="display: none;">
+                            <label for="numAlcantarillas" class="form-label">Número de Alcantarillas</label>
+                            <input type="number" id="numAlcantarillas" name="numAlcantarillas" class="form-input" min="1" placeholder="Ej: 2">
+                        </div>
+
+                        <div id="tankMedidas" class="form-group" style="display: none;">
+                            <label for="tankDimensions" class="form-label">Medidas del Tanque (Largo x Ancho x Alto)</label>
+                            <input type="text" id="tankDimensions" name="tankDimensions" class="form-input" placeholder="Ej: 3m x 2m x 2m">
+                        </div>
+
+                        <div id="tankCapacidad" class="form-group" style="display: none;">
+                            <label for="tankCapacity" class="form-label">Capacidad Total</label>
+                            <input type="text" id="tankCapacity" name="tankCapacity" class="form-input" placeholder="Ej: 5000 litros">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                </svg>
+                                Ubicación del Tanque
+                            </label>
+                            <div class="radio-group">
+                                <label class="radio-label">
+                                    <input type="radio" name="tankLocation" value="frente">
+                                    <span>Al frente de la casa</span>
+                                </label>
+                                <label class="radio-label">
+                                    <input type="radio" name="tankLocation" value="trasera">
+                                    <span>En la parte trasera</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="alert-info">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                                <line x1="12" y1="16" x2="12" y2="12" stroke="white" stroke-width="2"/>
+                                <line x1="12" y1="8" x2="12.01" y2="8" stroke="white" stroke-width="2"/>
+                            </svg>
+                            <strong>Importante:</strong> Este servicio requiere conexión a toma de agua en la propiedad.
+                        </div>
+                    </div>
+
+                    <!-- Personal Information -->
+                    <div class="form-group">
+                        <label for="fullName" class="form-label">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                                <circle cx="12" cy="7" r="4"/>
+                            </svg>
+                            Nombre Completo
+                        </label>
+                        <input type="text" id="fullName" name="fullName" class="form-input" required placeholder="Ej: Juan Pérez García">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            Teléfono de Contacto
+                        </label>
+                        <input type="tel" id="phone" name="phone" class="form-input" required placeholder="Ej: 8650-4644">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address" class="form-label">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            Dirección Exacta
+                        </label>
+                        <textarea id="address" name="address" class="form-input" rows="2" required placeholder="Ej: San José, Barrio Los Ángeles, 200m norte de la iglesia católica, casa amarilla con portón negro"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description" class="form-label">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>
+                            </svg>
+                            Descripción del Problema
+                        </label>
+                        <textarea id="description" name="description" class="form-input" rows="4" required placeholder="Describa brevemente la situación o el problema que necesita resolver..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                        Enviar por WhatsApp
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Contáctanos</h2>
+                <p class="section-subtitle">Estamos disponibles 24/7 para atenderte</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3 class="contact-title">WhatsApp</h3>
+                    <a href="https://wa.me/50686504644" class="contact-link" target="_blank" rel="noopener">
+                        +506 8650-4644
+                    </a>
+                    <a href="https://wa.me/50671055885" class="contact-link" target="_blank" rel="noopener">
+                        +506 7105-5885
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3 class="contact-title">Email</h3>
+                    <a href="mailto:edestaqueo24horas.sa@gmail.com" class="contact-link">
+                        edestaqueo24horas.sa@gmail.com
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">👍</div>
+                    <h3 class="contact-title">Facebook</h3>
+                    <a href="https://www.facebook.com/profile.php?id=100063558125476" class="contact-link" target="_blank" rel="noopener">
+                        Síguenos en Facebook
+                    </a>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">⏰</div>
+                    <h3 class="contact-title">Horario</h3>
+                    <p class="contact-text">Disponibles 24 horas<br>Los 7 días de la semana</p>
+                </div>
+            </div>
+
+            <div class="social-proof">
+                <div class="proof-item">
+                    <strong>+500</strong>
+                    <span>Clientes Satisfechos</span>
+                </div>
+                <div class="proof-item">
+                    <strong>24/7</strong>
+                    <span>Disponibilidad</span>
+                </div>
+                <div class="proof-item">
+                    <strong>+10</strong>
+                    <span>Años de Experiencia</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2024 Destaqueos 24 Horas - Multiservicios Espinoza</p>
+            <p class="footer-subtext">Servicio profesional garantizado</p>
+        </div>
+    </footer>
+
+    <script>
+// Service Worker Registration
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+            .then(registration => {
+                console.log('Service Worker registrado:', registration);
+            })
+            .catch(error => {
+                console.log('Error al registrar Service Worker:', error);
+            });
+    });
+}
+
+// PWA Install Prompt
+let deferredPrompt;
+const installPrompt = document.getElementById('installPrompt');
+const installBtn = document.getElementById('installBtn');
+const dismissBtn = document.getElementById('dismissBtn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+    e.preventDefault();
+    deferredPrompt = e;
+    
+    // Show install prompt after 3 seconds
+    setTimeout(() => {
+        installPrompt.style.display = 'block';
+    }, 3000);
+});
+
+if (installBtn) {
+    installBtn.addEventListener('click', async () => {
+        if (deferredPrompt) {
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            console.log(`User response: ${outcome}`);
+            deferredPrompt = null;
+            installPrompt.style.display = 'none';
+        }
+    });
+}
+
+if (dismissBtn) {
+    dismissBtn.addEventListener('click', () => {
+        installPrompt.style.display = 'none';
+    });
+}
+
+// Navigation
+const navButtons = document.querySelectorAll('.nav-btn');
+const sections = document.querySelectorAll('.section');
+
+navButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const targetSection = button.dataset.section;
+        
+        // Remove active class from all buttons and sections
+        navButtons.forEach(btn => btn.classList.remove('active'));
+        sections.forEach(section => section.classList.remove('active'));
+        
+        // Add active class to clicked button and target section
+        button.classList.add('active');
+        document.getElementById(targetSection).classList.add('active');
+        
+        // Scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+
+// Quick action buttons
+const quoteActionBtns = document.querySelectorAll('[data-action="quote"]');
+quoteActionBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Navigate to quote section
+        navButtons.forEach(navBtn => navBtn.classList.remove('active'));
+        sections.forEach(section => section.classList.remove('active'));
+        
+        document.querySelector('[data-section="quote"]').classList.add('active');
+        document.getElementById('quote').classList.add('active');
+        
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+
+// Service card buttons
+const serviceButtons = document.querySelectorAll('.service-btn');
+serviceButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const service = btn.dataset.quote;
+        
+        // Navigate to quote section
+        navButtons.forEach(navBtn => navBtn.classList.remove('active'));
+        sections.forEach(section => section.classList.remove('active'));
+        
+        document.querySelector('[data-section="quote"]').classList.add('active');
+        document.getElementById('quote').classList.add('active');
+        
+        // Pre-select the service
+        const serviceSelect = document.getElementById('service');
+        serviceSelect.value = service;
+        
+        // Trigger change event to show relevant fields
+        serviceSelect.dispatchEvent(new Event('change'));
+        
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+
+// Form Logic
+const serviceSelect = document.getElementById('service');
+const otherServiceDetail = document.getElementById('otherServiceDetail');
+const septicTankDetails = document.getElementById('septicTankDetails');
+const quoteForm = document.getElementById('quoteForm');
+
+// Service selection handler
+serviceSelect.addEventListener('change', (e) => {
+    const selectedService = e.target.value;
+    
+    // Hide all conditional sections
+    otherServiceDetail.style.display = 'none';
+    septicTankDetails.style.display = 'none';
+    
+    // Clear other service description
+    document.getElementById('otherServiceDescription').value = '';
+    
+    // Reset septic tank fields
+    document.querySelectorAll('input[name="tankSpecType"]').forEach(radio => {
+        radio.checked = false;
+    });
+    document.querySelectorAll('input[name="tankLocation"]').forEach(radio => {
+        radio.checked = false;
+    });
+    document.getElementById('numAlcantarillas').value = '';
+    document.getElementById('tankDimensions').value = '';
+    document.getElementById('tankCapacity').value = '';
+    document.getElementById('tankAlcantarillas').style.display = 'none';
+    document.getElementById('tankMedidas').style.display = 'none';
+    document.getElementById('tankCapacidad').style.display = 'none';
+    
+    // Show relevant sections
+    if (selectedService === 'otros') {
+        otherServiceDetail.style.display = 'block';
+        document.getElementById('otherServiceDescription').required = true;
+    } else {
+        document.getElementById('otherServiceDescription').required = false;
+    }
+    
+    if (selectedService === 'tanque-septico') {
+        septicTankDetails.style.display = 'block';
+    }
+});
+
+// Septic tank specification type handler
+const tankSpecRadios = document.querySelectorAll('input[name="tankSpecType"]');
+tankSpecRadios.forEach(radio => {
+    radio.addEventListener('change', (e) => {
+        const specType = e.target.value;
+        
+        // Hide all tank spec inputs
+        document.getElementById('tankAlcantarillas').style.display = 'none';
+        document.getElementById('tankMedidas').style.display = 'none';
+        document.getElementById('tankCapacidad').style.display = 'none';
+        
+        // Clear all inputs
+        document.getElementById('numAlcantarillas').value = '';
+        document.getElementById('tankDimensions').value = '';
+        document.getElementById('tankCapacity').value = '';
+        
+        // Show relevant input
+        if (specType === 'alcantarillas') {
+            document.getElementById('tankAlcantarillas').style.display = 'block';
+        } else if (specType === 'medidas') {
+            document.getElementById('tankMedidas').style.display = 'block';
+        } else if (specType === 'capacidad') {
+            document.getElementById('tankCapacidad').style.display = 'block';
+        }
+    });
+});
+
+// Form submission handler
+quoteForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    
+    // Get form values
+    const service = serviceSelect.options[serviceSelect.selectedIndex].text;
+    const fullName = document.getElementById('fullName').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const address = document.getElementById('address').value.trim();
+    const description = document.getElementById('description').value.trim();
+    
+    // Build WhatsApp message
+    let message = `*SOLICITUD DE COTIZACIÓN*\n\n`;
+    message += `📋 *Servicio:* ${service}\n\n`;
+    
+    // Add other service detail if applicable
+    if (serviceSelect.value === 'otros') {
+        const otherDescription = document.getElementById('otherServiceDescription').value.trim();
+        if (otherDescription) {
+            message += `📝 *Detalle del Servicio:*\n${otherDescription}\n\n`;
+        }
+    }
+    
+    // Add septic tank details if applicable
+    if (serviceSelect.value === 'tanque-septico') {
+        message += `🚛 *DETALLES DEL TANQUE SÉPTICO:*\n`;
+        
+        // Tank specifications
+        const tankSpecType = document.querySelector('input[name="tankSpecType"]:checked');
+        if (tankSpecType) {
+            if (tankSpecType.value === 'alcantarillas') {
+                const numAlcantarillas = document.getElementById('numAlcantarillas').value.trim();
+                if (numAlcantarillas) {
+                    message += `• Número de alcantarillas: ${numAlcantarillas}\n`;
+                }
+            } else if (tankSpecType.value === 'medidas') {
+                const tankDimensions = document.getElementById('tankDimensions').value.trim();
+                if (tankDimensions) {
+                    message += `• Medidas: ${tankDimensions}\n`;
+                }
+            } else if (tankSpecType.value === 'capacidad') {
+                const tankCapacity = document.getElementById('tankCapacity').value.trim();
+                if (tankCapacity) {
+                    message += `• Capacidad: ${tankCapacity}\n`;
+                }
+            }
+        }
+        
+        // Tank location
+        const tankLocation = document.querySelector('input[name="tankLocation"]:checked');
+        if (tankLocation) {
+            const locationText = tankLocation.value === 'frente' ? 'Al frente de la casa' : 'En la parte trasera';
+            message += `• Ubicación: ${locationText}\n`;
+        }
+        
+        message += `\n⚠️ *Nota:* Se requiere conexión a toma de agua\n\n`;
+    }
+    
+    // Add personal information
+    message += `👤 *INFORMACIÓN DE CONTACTO:*\n`;
+    message += `• Nombre: ${fullName}\n`;
+    message += `• Teléfono: ${phone}\n`;
+    message += `• Dirección: ${address}\n\n`;
+    
+    // Add description
+    message += `📄 *DESCRIPCIÓN:*\n${description}\n\n`;
+    
+    message += `---\n_Enviado desde Destaqueos 24 Horas PWA_`;
+    
+    // Encode message for WhatsApp
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = `https://wa.me/50686504644?text=${encodedMessage}`;
+    
+    // Open WhatsApp
+    window.open(whatsappURL, '_blank');
+    
+    // Show success feedback
+    showSuccessMessage();
+    
+    // Reset form
+    setTimeout(() => {
+        quoteForm.reset();
+        otherServiceDetail.style.display = 'none';
+        septicTankDetails.style.display = 'none';
+    }, 1000);
+});
+
+// Success message
+function showSuccessMessage() {
+    const successDiv = document.createElement('div');
+    successDiv.style.cssText = `
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+        color: white;
+        padding: 2rem 3rem;
+        border-radius: 1rem;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        z-index: 9999;
+        text-align: center;
+        font-weight: 700;
+        font-size: 1.2rem;
+        animation: popIn 0.3s ease-out;
+    `;
+    successDiv.innerHTML = `
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" style="margin-bottom: 1rem;">
+            <path d="M20 6L9 17l-5-5"/>
+        </svg>
+        <div>¡Solicitud Enviada!</div>
+        <div style="font-size: 0.9rem; font-weight: 400; margin-top: 0.5rem; opacity: 0.9;">
+            Te contactaremos pronto
+        </div>
+    `;
+    
+    document.body.appendChild(successDiv);
+    
+    setTimeout(() => {
+        successDiv.style.animation = 'popOut 0.3s ease-in';
+        setTimeout(() => {
+            document.body.removeChild(successDiv);
+        }, 300);
+    }, 2500);
+}
+
+// Add animations to document
+const style = document.createElement('style');
+style.textContent = `
+    @keyframes popIn {
+        from {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.5);
+        }
+        to {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+    }
+    
+    @keyframes popOut {
+        from {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+        }
+        to {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.5);
+        }
+    }
+`;
+document.head.appendChild(style);
+
+// Smooth scroll behavior for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// Add active state persistence
+window.addEventListener('load', () => {
+    const savedSection = sessionStorage.getItem('activeSection');
+    if (savedSection) {
+        navButtons.forEach(btn => btn.classList.remove('active'));
+        sections.forEach(section => section.classList.remove('active'));
+        
+        document.querySelector(`[data-section="${savedSection}"]`)?.classList.add('active');
+        document.getElementById(savedSection)?.classList.add('active');
+    }
+});
+
+// Save active section
+navButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        sessionStorage.setItem('activeSection', button.dataset.section);
+    });
+});
+
+console.log('Destaqueos 24 Horas PWA inicializada correctamente ✓');
+    </script>
+</body>
+</html>
